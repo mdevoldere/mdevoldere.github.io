@@ -1,0 +1,25 @@
+destination: ../www/
+permalink: /articles/:categories/:title.html
+# site settings
+title: Mickaël DEVOLDÈRE 
+subtitle: Formateur &amp; Développeur
+email: contact@localhost
+description: Ressources et guides pour les développeurs<br /> disponibles sous license Creative Commons.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author: MDevoldere
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 8
+
+# social settings
+github_url: https://github.com/mdevoldere
+gitlab_url: https://gitlab.com/mdevoldere
+linkedin_url: https://www.linkedin.com/in/devoldere
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
