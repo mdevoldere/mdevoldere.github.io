@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MDEV</title>
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/devoldere-flex.css">
+    <link rel="stylesheet" href="/assets/css/devoldere.css">
+    <link rel="stylesheet" href="/assets/css/devoldere-menu.css">
+</head>
+
+<body>
+    <header role="banner" id="top">
+        <div id="logo">
+            <a href="/" title="Mickaël DEVOLDÈRE">
+                <img src="/assets/d1.svg" alt="Devoldere Logo">
+            </a>
+            <h1>Mickaël DEVOLDÈRE<span>, Formateur Développeur</span></h1>
+        </div>
+        <nav role="navigation">
+            <a id="menuToggle" href="#"><i class="fa fa-bars"></i></a>
+            <ul id="menu1" class="menu">
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Tutoriaux</a>
+                    <ul>
+                        <li><a href="#">C#</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">SQL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Lab</a></li>
+                <li><a href="https://fr.linkedin.com/in/devoldere"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/mdevoldere"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://gitlab.com/mdevoldere"><i class="fa fa-gitlab"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        {% if crumbs.size > 0 %}
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>                
+                <li><a href="/"><i class="fa fa-home"></i></a></li>
+                {% for crumb in crumbs offset: 1 %}
+                {% if forloop.last %}
+                    <li>{{ page.title }}</li>
+                {% else %}
+                    <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+        {% endif %}
+
+        

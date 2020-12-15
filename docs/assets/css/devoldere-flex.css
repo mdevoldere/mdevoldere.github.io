@@ -1,0 +1,59 @@
+.flex, .flex1, .flex2, .flex3, .flex4, .flex5, .flex6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /*border: 1px solid #900;*/
+}
+
+.flex > *, .flex1 > *, .flex2 > *, .flex3 > *, .flex4 > *, .flex5 > *, .flex6 > * {
+    /*flex:1 1 auto;*/
+    display: inline-block;
+    transition: all ease .6s;
+    /*border: 1px solid #009;*/
+    width: 100%;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+
+/* S */
+@media (min-width: 767px) {
+    .flex > *, .flex2 > *, .flex3 > *, .flex4 > *, .flex5 > *, .flex6 > * { width: auto; }
+    .flex5 > *, .flex6 > * { width: 48%; }
+}
+
+/* M */
+@media (min-width: 1023px) {
+    .flex2 > *, .flex3 > *, .flex4 > * { width: 48%; }
+    .flex6 > * { width: 32%; }
+}
+
+/* L */
+@media (min-width: 1199px) {
+    .flex3 > *, .flex5 > * { width: 32%; }
+}
+
+/* XL */
+@media (min-width: 1599px) {
+    .flex4 > * { width: 24%; }
+    .flex5 > * { width: 19%; }
+    .flex6 > * { width: 15%; }
+}
+
+
+/* HD */
+@media (min-width: 1900px) {
+    .hd10  { width: 9%; }
+    .hd20  { width: 19%; }
+    .hd30  { width: 29%; }
+    .hd40  { width: 39%; }
+    .hd50  { width: 49%; }
+    .hd60  { width: 59%; }
+    .hd70  { width: 69%; }
+    .hd80  { width: 79%; }
+    .hd90  { width: 89%; }
+    .hd100 { width: 100%; }
+}

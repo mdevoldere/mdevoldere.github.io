@@ -1,0 +1,340 @@
+:root {
+
+    --header-bg: #2D6CA4;
+    --header-bg-transparent: #2D6CA455;
+    --header-bg-light: #4D8CC4;
+    --header-bg-hover: #FFFFFF66;
+    --header-txt: #EEEEEE;
+    --header-txt-hover: #FFFFFF;
+    --header-box-shadow: 0 0 10px 1px #2D6CA4;
+
+    --text: #222;
+
+    --lnk: #2D6CA4;
+    --lnk-hover: #4DA44C;
+    --lnk-bg: #2D6CA411;
+
+
+    --primary: #2D6CA4;/* #2D6CA4; bleu foncé */
+    --primary-hover: #2D6CA4AA;
+    --primary-transparent: #2D6CA422;
+
+    --secondary: #2D842C; /* vert foncé */
+    --secondary-hover: #2D842CAA;
+    --secondary-transparent: #2D842C33;
+    --secondary-box-shadow: 0 0 10px 1px #2D842C;
+
+    --hover: #FFFFFF66;
+    --hover-light: #FFFFFF33;
+    --hover-dark: #11111122;
+
+    --light: #EEEEEE; /* gris blanc */
+    --lighter: #FFFFFF; /* blanc */
+    --dark: #00001D; /* gris noir */
+    --darker: #000001; /* noir */
+    --dark-gray: #202833; /* gris foncé */
+    --gray: #CCCCCC; /* gris */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("../fonts/OpenDyslexic-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenDyslexicAlta";
+    src: url("../fonts/OpenDyslexicAlta-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenDyslexicMono";
+    src: url("../fonts/OpenDyslexicMono-Regular.otf") format("truetype");
+}
+
+body {
+    font-family: "OpenDyslexic";
+    font-size: 1rem;
+    margin: 0;
+    padding: 3em 0 3em 0;
+    width: 100%;
+    background-color: #eaf3f7;
+    color: var(--text);
+}
+
+a {
+    color: var(--lnk);
+    text-decoration: none;
+    transition: all ease .6s;
+    padding: 0 2px;
+}
+
+a:hover {
+    color: var(--lnk-hover);
+    background-color: var(--lnk-bg);
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+    margin:0;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h1 span {
+    display: none;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.20em;
+}
+
+
+p {
+    margin: 0;
+    padding: 5px;
+}
+
+
+/* HEADER */
+
+body > header {
+    background-color: var(--header-bg);
+}
+
+body > header h1 {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.4em;
+    padding: 0;
+}
+
+body > header, body > header a {
+    color: var(--header-txt);
+}
+
+body > header a:hover {
+    color: var(--header-bg);
+    background-color: var(--header-bg-hover);
+    box-shadow: inset 0 -2px 2px #FFFFFFAA;
+}
+
+#logo {
+    position:fixed;
+    margin:0;
+    padding: 0 0 0 10px;
+    top:0;
+    left:0;
+    height:50px;
+    width: 100%;
+    box-shadow: var(--header-box-shadow);
+    color: var(--light);
+    background-color: var(--primary);
+    background-image: url('/assets/dm1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -300px;
+    transition: all ease 0.5s;
+    z-index: 90;
+}
+
+#logo:hover {
+    background-position-x: 5px;
+}
+
+#logo a:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#logo:hover img{
+    opacity: 0;
+}
+
+
+
+#logo img {
+    height: 100%;
+    vertical-align: middle;
+    transition: all ease 1s;
+}
+
+.breadcrumb {
+
+}
+
+.breadcrumb ul {
+    margin: 0 3px;
+    padding-left: 0;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    list-style: none;
+}
+
+.breadcrumb li:not(:last-child):after {
+    display: inline-block;
+    content: '\00BB'; /* \007E \00B7 */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+main {
+    width:100%;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 1em auto;
+    padding: 1rem;
+    z-index: 80;
+    /*display: grid;
+    grid-template-areas: "N" "S" "A";
+    grid-gap: 10px;*/
+}
+
+main > nav {
+    padding: 1em 0;
+}
+
+main header {
+    margin-bottom: 10px;
+}
+
+article h1 {
+    display: block;
+    padding: 15px 5px 10px 5px;
+    font-size: 1.7em;
+    margin-top: 15px;
+    background: linear-gradient(var(--header-bg-hover), var(--header-bg-transparent));
+}
+
+article header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+article header a {
+    display:block;
+    padding: 0 5px;
+    color: var(--header-txt);
+    background-color: var(--header-bg);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+article header a:hover {
+    color: var(--header-txt-hover);
+    background-color: var(--header-bg-light);
+}
+
+main section, main aside {
+    /*box-shadow: 0 0 3px 0 #111;*/
+    padding-bottom: 10px;
+}
+
+main article {
+    margin-bottom: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+
+
+.post {
+    margin: 5px;
+    box-shadow: 0 0 1px 0 #ccc;
+}
+
+.flex1 .post {
+    margin: 0;
+    box-shadow: none;
+    width:100% !important;
+}
+
+.post header p {
+    text-align: right;
+    padding-top:0;
+    font-size: 0.6em;
+}
+
+.post-content {
+    padding: 5px;
+}
+
+.post-meta {
+    padding:5px;
+    font-size: 0.7em;
+}
+
+.author {
+    display: grid;
+    grid-template-areas:    "A_AV A_PS"
+                            "A_AV A_DE"
+                            "A_P A_P";
+    grid-template-columns: 100px 1fr;
+}
+
+.author > h2 {
+    grid-area: A_PS;
+}
+
+.author > img {
+    grid-area: A_AV;
+}
+
+.author > p {
+    grid-area: A_DE;
+}
+
+.author > div {
+    grid-area: A_P;
+    margin: 10px;
+}
+
+
+
+
+@media (min-width: 1023px) {
+    h1 span {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1599px) {
+    main {
+        /*grid-template-areas: "N N" "S A";
+        grid-template-columns: 1fr 320px;
+        grid-template-rows: 50px 1fr;*/
+    }
+
+    main > section {
+        
+    }
+
+    main > aside {
+        /*grid-area: A;*/
+    }
+}

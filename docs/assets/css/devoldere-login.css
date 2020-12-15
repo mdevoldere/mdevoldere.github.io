@@ -1,0 +1,48 @@
+body.login, .login .message, .login form	{
+    background-color: #111;
+    color: #FFF;
+}
+
+.login .message, .login form	{
+    background-color: #222;
+    border-radius: 5px;
+}
+.login .message {
+    display: none;
+}
+
+body.login div#login h1 a	{
+    /*background-image: url('//devoldere.net/assets/devoldere/d2.svg');*/
+    display: none;
+}
+body.login div#login form#loginform	{
+
+}
+body.login div#login form#loginform p label	{
+
+}
+body.login div#login form#loginform input	{
+
+}
+body.login div#login form#loginform input#user_login	{
+
+}
+body.login div#login form#loginform input#user_pass	{
+
+}
+body.login div#login form#loginform p.forgetmenot	{
+
+}
+body.login div#login form#loginform p.submit input#wp-submit	{
+    background-color: #234;
+    color: #FFC;
+    border-color: #111;
+    box-shadow: 0 1px 0 #234;
+}
+body.login div#login p#nav a	{
+
+}
+body.login div#login p#backtoblog a {
+    display:none;
+}
+

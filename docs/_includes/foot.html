@@ -1,0 +1,23 @@
+</main>
+<footer>
+
+</footer>
+
+<script>
+    var menuToggle = document.querySelector("#menuToggle");
+    var menu = document.querySelector("#menu1");
+
+    menuToggle.addEventListener("click", function(){
+        if(menu.classList.contains("menu-active")) {
+            menu.classList.remove("menu-active");
+            menuToggle.innerHTML = '<i class="fa fa-bars"></i>';
+        }
+        else {
+            menu.classList.add("menu-active");
+            menuToggle.innerHTML = '<i class="fa fa-close"></i>';
+        }
+    });
+</script>
+
+</body>
+</html>

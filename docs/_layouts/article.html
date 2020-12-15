@@ -1,0 +1,15 @@
+{% include head.html %}
+<section>
+    <article>
+        <header>
+            <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
+            {% if post.date %}<p>{{ post.date | date: "%m/%d/%Y" }}</p>{% endif %}
+        </header>
+
+        {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+        
+        <div>{{ content }}</div>
+    </article>
+</section>
+
+{% include foot.html %}
