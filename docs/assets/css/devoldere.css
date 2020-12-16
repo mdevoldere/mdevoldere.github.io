@@ -46,17 +46,12 @@
 }
 
 @font-face {
-    font-family: "OpenDyslexicAlta";
-    src: url("../fonts/OpenDyslexicAlta-Regular.otf") format("truetype");
-}
-
-@font-face {
-    font-family: "OpenDyslexicMono";
-    src: url("../fonts/OpenDyslexicMono-Regular.otf") format("truetype");
+    font-family: "SourceSansPro";
+    src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 body {
-    font-family: "OpenDyslexic";
+    font-family: "SourceSansPro";
     font-size: 1rem;
     margin: 0;
     padding: 3em 0 3em 0;
@@ -259,6 +254,8 @@ main article {
     background-color: #FFF;
     border-radius: 5px;
     padding-bottom: 10px;
+    
+    font-family: "OpenDyslexic";
 }
 
 
