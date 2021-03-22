@@ -1,0 +1,63 @@
+:root {
+    --header-height: 75px;
+}
+
+#top {
+    height: var(--header-height);
+}
+
+#top h1 > span {
+    display: block;
+    font-size: .5em;
+}
+
+#logo {
+    align-items: flex-start;
+    gap: .5em;
+}
+
+#logo img {
+    width: var(--header-height);
+    height: var(--header-height);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu a {
+    display:block;
+    padding: 1em;
+}
+
+#menu a:hover {
+    background-color: #FFFFFF33;
+}
+
+#menu li {
+    position: relative;
+    white-space: nowrap;
+}
+
+#menu li > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+#menu li:hover > ul {
+    display: block;
+    animation: menuHover 1s ease 1;
+    background-color: #FFFFFF33;
+}
+
+
+@keyframes menuHover {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

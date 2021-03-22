@@ -1,0 +1,95 @@
+character: 
+  - domain: "Autonome & Rigoureux"
+    scope:
+      - "Sens de l'organisation"
+      - "Homme de terrain"
+      - "Agent du changement efficace"
+  - domain: "Diplomate & Respectueux"
+    scope: 
+      - "Esprit d'équipe"
+      - "Bon relationnel"
+      - "Prévention et Secours Civiques"
+skills: 
+  - domain: "Formation professionnelle"
+    scope: 
+      - "Raisonnement logique, développement web, bases de données, frameworks et CMS"
+      - "En centre de formation, à domicile et à distance"
+      - "Formations à la carte disponibles"
+  - domain: "Système d'information"
+    scope: 
+      - "Installation et maintenance sur serveurs GNU/Linux (Famille Debian)"
+      - "Installation et sécurisation de serveurs de bases de données (MySQL, PostgreSQL, MongoDB)"
+      - "Modélisation de bases de données SQL et noSQL"
+      - "Retro-ingénieurie de bases de données existantes"
+      - "(Dé)Centralisation de données" 
+  - domain: "Conception et développement d'API Rest"
+    scope: 
+      - "Avec PHP, NodeJS ou ASP.NET Core 5+"
+  - domain: "Testing"
+    scope: 
+      - "Rédaction de scénarii de tests fonctionnels"
+      - "Rédaction et Développement de tests unitaires (PHP et C#)"
+      - "Analyse de résultats de tests et rédaction de rapports détaillés"
+  - domain: "Développement d'applications web"
+    scope: 
+      - "Applications intranet (gestion, statistiques...)"
+      - "PHP, Symfony, Laravel, Prestashop, Wordpress"
+      - "ASP.NET Core 5"
+  - domain: "Développement de thèmes et modules pour CMS"
+    scope: 
+      - "Prestashop"
+      - "Wordpress"
+abilities:
+  - domain: "Pédagogie & Andragogie"
+    scope: 
+      - "Animation de séquences de formation"
+      - "Conception de formation"
+      - "Techniques pédagogiques variées"
+  - domain: "Analyse & Conception"
+    scope: 
+      - "Analyse de données"
+      - "Méthode Merise"
+      - "Unified Process"
+  - domain: "Développement Web"
+    scope: 
+      - "HTML & CSS"
+      - "Javascript"
+      - "PHP"
+      - "ASP.NET Core"
+  - domain: "Développement Logiciel"
+    scope: 
+      - "C# .NET"
+      - "Windows Presentation Foundation"
+      - "Windows Forms"
+  - domain: "Bases de données"
+    scope: 
+      - "MySQL"
+      - "PostgreSQL"
+      - "Microsoft SQL Server"
+  - domain: "Frameworks & CMS"
+    scope: 
+      - "Symfony"
+      - "VueJS"
+      - "ReactJS"
+      - "Prestashop"
+      - "Wordpress"
+  - domain: "Administration Web"
+    scope: 
+      - "GNU/Linux Debian"
+      - "GNU/Linux CentOs"
+      - "LAMP & LNMP"
+  - domain: "Réseaux & Télécommunications"
+    scope: 
+      - "Étude & Déploiement de solutions IT"
+      - "Virtualisation"
+      - "Cisco IOS"
+  - domain: "Support Informatique"
+    scope: 
+      - "Maintenance matérielle et logicielle"
+      - "Support Utilisateur"
+      - "Formation des utilisateurs"
+  - domain: "Connaissances Métier transverses"
+    scope: 
+      - "Logistique amp; Magasinage"
+      - "Optique"
+      - "Chauffage & Climatisation"

@@ -7,7 +7,7 @@ email: contact@localhost
 description: Ressources et guides pour les développeurs<br /> disponibles sous license Creative Commons.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
-author: MDevoldere
+#author: MDevoldere
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
