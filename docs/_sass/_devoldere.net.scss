@@ -1,9 +1,11 @@
 :root {
     --header-height: 75px;
+    --header-bg: #ccc;
 }
 
 #top {
     height: var(--header-height);
+    background: var(--header-bg);
 }
 
 #top h1 > span {
@@ -44,12 +46,12 @@
     position: absolute;
     left: 0;
     top: 100%;
+    background: var(--header-bg);
 }
 
 #menu li:hover > ul {
     display: block;
     animation: menuHover 1s ease 1;
-    background-color: #FFFFFF33;
 }
 
 

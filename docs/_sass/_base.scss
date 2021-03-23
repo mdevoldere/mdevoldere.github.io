@@ -127,6 +127,30 @@ main figure {
     text-align: center;
 }
 
+
+.breadcrumb {
+    padding: 1em 10px 1em 0;
+}
+
+.breadcrumb ul, .breadcrumb ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    padding: 0;
+    margin-left:0;
+}
+
+.breadcrumb li:not(:last-child):after {
+    display: inline-block;
+    content: '\00BB'; /* \007E \00B7 */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 th, td {
     padding: .3em;
     font-size: .8em;
