@@ -74,7 +74,7 @@ main {
 }
 
 main ul {
-    list-style: circle;
+    /*list-style: circle;*/
     margin: .5em 0;
 }
 
@@ -84,7 +84,7 @@ main ul ul {
 
 main ul li { 
     margin-top: .2em;
-    margin-left: 1.5em;
+    margin-left: .5em;
 }
 
 main ul li::before {
@@ -168,6 +168,10 @@ section header > p {
 
 article {
     margin: 0 auto;
+}
+
+.mt {
+    margin-top: 1em;
 }
 
 

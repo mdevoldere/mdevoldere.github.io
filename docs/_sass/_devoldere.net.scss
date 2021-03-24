@@ -6,6 +6,7 @@
 #top {
     height: var(--header-height);
     background: var(--header-bg);
+    overflow: hidden;
 }
 
 #top h1 > span {
@@ -54,6 +55,24 @@
     animation: menuHover 1s ease 1;
 }
 
+@media (max-width: 960px) {    
+
+    #nav {
+        flex-basis: 160px;
+    }
+
+    #menu {
+        flex-direction: column;
+        align-items: stretch;
+        height: var(--header-height);
+        text-align: center;
+    }
+
+    #menu a {
+        padding: .2em;
+    }
+}
+
 
 @keyframes menuHover {
     0% {
@@ -62,4 +81,18 @@
     100% {
         opacity: 1;
     }
+}
+
+.intro article {
+    background: #DDD;
+}
+
+.intro h2 {
+    text-align: center;
+    background: var(--header-bg);
+}
+
+.intro p {
+    padding: 1em 2em;
+    font-size: .8em;
 }
