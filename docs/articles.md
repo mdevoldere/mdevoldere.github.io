@@ -7,5 +7,6 @@ description: null
 image: null
 author: null
 show_tile: false
-order: 1
+order: 1 
+permalink: /articles/
 ---

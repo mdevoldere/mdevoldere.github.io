@@ -1,0 +1,72 @@
+@use "sass:map";
+
+$theme:(
+    "primary": #4376AF,
+    "secondary": #43AF76,
+) !default;
+
+$alerts:(
+    "success": #28a745,
+    "info": #17a2b8,
+    "warn": #C06000,
+    "alert": #AA0707,
+) !default;
+
+:root {
+    
+
+    @each $color-name, $color in $theme {
+        --#{$color-name}-darkest: #{darken($color, 40%)};
+        --#{$color-name}-darker: #{darken($color, 25%)};
+        --#{$color-name}-dark: #{darken($color, 10%)};
+        --#{$color-name}-invert: #{invert($color, $weight: 100%)};
+        --#{$color-name}: #{$color};
+        --#{$color-name}-light: #{lighten($color, 10%)};
+        --#{$color-name}-lighter: #{lighten($color, 25%)};
+        --#{$color-name}-lightest: #{lighten($color, 40%)};
+        --#{$color-name}-alpha: rgba(#{$color}, .2);
+        --#{$color-name}-border: 1px solid #{$color};
+        --#{$color-name}-shadow: 0 0 1px 0 #{$color};
+    }
+
+    @each $color-name, $color in $alerts {
+        --#{$color-name}-dark: #{darken($color, 40%)};
+        --#{$color-name}-invert: #{invert($color, $weight: 100%)};
+        --#{$color-name}: #{$color};
+        --#{$color-name}-light: #{lighten($color, 40%)};
+    }
+    
+}
+
+body.alt {
+    @each $color-name, $color in $theme {
+        --#{$color-name}-darkest: #{lighten($color, 40%)};
+        --#{$color-name}-darker: #{lighten($color, 25%)};
+        --#{$color-name}-dark: #{lighten($color, 10%)};
+        --#{$color-name}: #{$color};
+        --#{$color-name}-light: #{darken($color, 10%)};
+        --#{$color-name}-lighter: #{darken($color, 25%)};
+        --#{$color-name}-lightest: #{darken($color, 40%)};
+        --#{$color-name}-alpha: rgba(#{$color}, .2);
+        --#{$color-name}-border: 1px solid #{$color};
+        --#{$color-name}-shadow: 0 0 1px 0 #{$color};
+    }
+
+    @each $color-name, $color in $alerts {
+        --#{$color-name}-dark: #{darken($color, 40%)};
+        --#{$color-name}-invert: #{invert($color, $weight: 100%)};
+        --#{$color-name}: #{$color};
+        --#{$color-name}-light: #{lighten($color, 40%)};
+    }
+}
+
+@each $color-name, $color in $alerts {
+    .#{$color-name} {
+        background-color: rgba($color, 0.7);
+        color: lighten($color, 50%);
+
+        & > * {
+            color: lighten($color, 50%);
+        }
+    }
+  }

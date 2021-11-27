@@ -1,0 +1,124 @@
+:root {
+     --alert: #FF000033;
+    --warn: #FFFF0033;
+    --info: #0000FF33;
+    --success: #00FF0033;
+}
+/*
+a, button, .btn {
+    cursor: pointer;
+    color: var(--secondary-darkest, var(--link));
+}
+
+a:hover, a.focus, button:hover, .btn:hover {
+    color: var(--secondary-dark, var(--txt));
+    //text-shadow: var(--txt-shadow, 1px 1px 1px var(--bg), 0 0 0.2em var(--bg), 0 0 0.2em var(--bg));
+}
+
+a:active, button:active, .btn:active {
+    color: var(--secondary-light, var(--txt));
+    //text-shadow: var(--txt-shadow, 1px 1px 2px #cfc, 0 0 0.2em #cfc, 0 0 0.2em #cfc);
+}
+
+a.fa {
+    font-size: 2rem;
+}
+
+button, .btn {
+    cursor: pointer;
+    padding: .5rem;
+    border: var(--primary-border, 0);
+    margin: .2rem;
+    background: var(--primary-lightest, var(--hover));
+}
+
+button:hover, .btn:hover {
+    background: var(--primary-lighter, var(--hover));
+}
+*/
+.alert, .warn, .info, .success {
+    background: var(--primary-hover, var(--hover));
+    margin: 1rem;
+    
+    h2, h3 {
+        background: var(--primary-hover, var(--hover));
+        font-weight: bold;
+    }
+}
+
+.alert {
+    background-color: var(--alert);
+}
+
+.warn {
+    background-color: var(--warn);
+}
+
+.info {
+    background-color: var(--info);
+}
+
+.success {
+    background-color: var(--success);
+}
+
+.card {
+    background-color: var(--bg-hover);
+}
+
+ul.inner {
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+ul.inner li {
+    padding: 1rem;
+}
+
+ul.inner li:hover {
+    background-color: var(--bg-hover);
+}
+
+@keyframes bannerLoad {
+    0% {
+        opacity: .1;
+    }
+    100% {
+        opacity: .9;
+    }
+}
+
+.banner {
+    margin: 0;
+    height: 35rem;
+    min-height: 35rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: .8;
+    animation: bannerLoad 5000ms ease 1;
+}
+
+.banner p {
+    width: 800px;
+    flex-basis: 800px;
+    max-width: 100%;
+    margin: 0 1em 0 0;
+    padding: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.banner a, a.action {
+    text-align: center;
+    padding: 1em;
+    flex-basis: 250px;
+    width: 250px;
+    font-style: normal;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+}

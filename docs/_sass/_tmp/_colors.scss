@@ -1,0 +1,72 @@
+@import './colors-theme';
+/*
+:root {
+    @include darkmode($theme); 
+    /*--font: 'Courier New', monospace; *//*
+    --font: Arial, Helvetica, sans-serif;
+    --border: 1px solid currentColor;
+}
+
+body {
+    
+}
+
+body.alt {
+    @include lightmode($theme);
+}
+
+body > *, .container {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background: var(--bg,);
+    color: var(--primary-darkest, var(--txt));
+    border: var(--primary-border, 0);
+    box-shadow: var(--box-shadow, none);
+    transition: width ease-in .6s;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        @include lightmode($theme); 
+    }
+
+    body.alt {
+        @include darkmode($theme);
+    }
+}
+
+.alert, .warn, .info, .success {
+    margin: 1rem;
+
+    &:hover {
+        background: var(--hover);
+    }
+    
+    h2, h3 {
+        background: var(--hover-dark);
+        font-weight: bold;
+    }
+}
+
+.alert {
+    background: var(--alert);
+    color: var(--lightest);
+}
+
+.warn {
+    background: var(--warning);
+    color: var(--darkest);
+}
+
+.info {
+    background: var(--info);
+    color: var(--lightest);
+}
+
+.success {
+    background: var(--success);
+    color: var(--lightest);
+}
+*/

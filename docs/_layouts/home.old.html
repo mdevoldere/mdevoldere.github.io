@@ -1,0 +1,51 @@
+{% include _head.html %}
+
+<section class="row between">
+
+    
+    <a class="flex3 card" href="{{ "/about/" | relative_url }}">
+        <h2>Formateur</h2>
+        <ul class="inner">
+            <li>Développement Web Frontend</li>
+            <li>Développement Backend</li>
+            <li>Bases de données SQL &amp; NoSQL</li>
+        </ul>
+    </a>
+    <a class="flex3 card" href="{{ "/about/" | relative_url }}">
+        <h2>Concepteur</h2>
+        <ul class="inner">
+            <li>Analyse et conception Métier</li>
+            <li>Modélisation de bases de données</li>
+            <li>Urbanisation S.I</li>
+        </ul>
+        <p></p>
+    </a>
+    <a class="flex3 card" href="{{ "/about/" | relative_url }}">
+        <h2>Développeur</h2>
+        <ul class="inner">
+            <li>JS, PHP, C#, Java</li>
+            <li>Symfony, Prestashop, Wordpress</li>
+            <li>VueJS, React, Electron</li>
+        </ul>
+    </a>
+    
+
+    
+</section>
+<section>
+    {{ content }}
+</section>
+<section>
+    {% include articles-list.html %}
+</section>
+
+<section>
+    <article>
+        <h2>Aspirant Développeur ?</h2>
+        <p>Le métier de développeur repose sur la création de logiciels et/ou de sites internet en s'appuyant sur des langages informatiques...</p>
+        <a class="btn m" href="/guides/">Suivez les guides de démarrage</a>
+    </article>
+</section>
+
+
+{% include _foot.html %}

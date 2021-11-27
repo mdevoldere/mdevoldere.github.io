@@ -1,0 +1,17 @@
+.home {
+    margin:0;
+    padding: 0 0 0 0;
+    flex-basis: 100%;
+    background: url('../dm.svg') no-repeat;
+    background-size: contain;
+    background-position: left;
+    transform: scaleX(-1);
+filter: FlipH;
+}
+
+@media (min-width: 800px) {
+    .home {
+        padding: 0 0 0 0;
+        background-position: right;
+    }
+}

@@ -1,0 +1,73 @@
+@mixin baseThemeAlt() {
+    --txt: #000;
+    --bg: linear-gradient(#6CF, #9EF);
+    --bg-hover: #00000009;
+    --bg-inner: #00000018;
+    --lnk: #112;
+    --lnk-hover: #121;
+}
+
+@mixin baseTheme() {
+    --txt: #DDD;
+    --bg: linear-gradient(#000, #112);
+    --bg-hover: #FFFFFF09;
+    --bg-inner: #FFFFFF18;
+    --lnk: #6CF;
+    --lnk-hover: #393;
+}
+
+:root {
+    @include baseTheme();
+}
+
+body.alt {
+    @include baseThemeAlt();
+}
+
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        @include baseThemeAlt();
+    }
+
+    body.alt {
+        @include baseTheme();
+    }
+}*/
+
+body {
+    color: var(--txt);
+    background: var(--bg);
+}
+
+.app > *, .container {
+    background: var(--bg-hover);
+}
+
+.app > header, .app > nav, .app > footer, main > nav {
+    background: var(--bg-inner);
+}
+
+section > nav, article > nav {
+    background-color: var(--bg-hover);
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--lnk);
+}
+
+button, .btn {
+    cursor: pointer;
+    border: 1px solid currentColor;
+    color: currentColor;
+    background-color: var(--bg-hover);
+}
+
+a:hover, a:focus, a:active, button:hover, .btn:hover {
+    color: var(--lnk-hover);
+}
+
+h2, h3, h4 {
+    color: var(--lnk);
+    background-color: var(--bg-hover);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.data.author.fullname }}, {{ site.data.author.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="{{ "/assets/js/main.js" | relative_url }}" type="module"></script>
+</head>
+<body class="app">
+    <header id="top" role="banner">
+        <a id="logo" href="{{ "/" | absolute_url  }}" title="{{ site.title }}">
+            <h1>{{ site.title }}</h1>
+            <img src="{{ "/assets/d.svg" | relative_url }}" alt="Logo">
+        </a>
+        <nav role="navigation">
+            <ul id="menu" class="menu">
+                {% for menuItem in site.data.menu %}
+                <li>
+                    <a href="{{ menuItem.url }}">{{ menuItem.label }}</a>
+                    {%if menuItem.items %}
+                    <ul>
+                    {% for menuSubItem in menuItem.items %}
+                        <li><a href="{{ menuSubItem.url }}">{{ menuSubItem.label }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+                <li><a href="{{ "/about/" | relative_url }}" class="fa fa-address-card"></a></li>
+                <li><a href="{{ site.data.author.github }}" class="fa fa-github"></a></li>
+                <li><a href="{{ site.data.author.gitlab }}" class="fa fa-gitlab"></a></li>
+                <li><a href="{{ site.data.author.linkedin }}" class="fa fa-linkedin"></a></li>
+                <li><a id="dys" class="fa fa-eye"></a></li>
+                <li><a id="theme" class="fa fa-star-half-empty"></a></li>
+            </ul>
+            
+        </nav>  
+        <a id="menuToggle" class="fa fa-bars"></a>
+    </header>  
+
+    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+    {% if crumbs.size > 0 %}
+    <nav  aria-label="breadcrumb" class="container breadcrumb{% if page.full %} full{% endif %}">
+        <ol>                
+            <li><a href="/"><i class="fa fa-home"></i></a></li>
+            {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+                <li>{{ page.title }}</li>
+            {% else %}
+                <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ol>
+    </nav>
+    {% endif %}
+
+    <main>

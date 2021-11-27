@@ -1,15 +1,39 @@
-{% include head.html %}
+{% include _head.html %}
 <section>
-    <article>
-        <header>
-            <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
-            {% if post.date %}<p>{{ post.date | date: "%m/%d/%Y" }}</p>{% endif %}
-        </header>
+    <header>
+        <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
+        {% if page.date %}<time datetime="{{ page.date }}">{{ page.date | date: "%m/%d/%Y" }}</aside>{% endif %}
+        {% if page.banner %}<img src="{{ site.baseurl }}/{{ page.image }}" alt="Page banner">{% endif %}
+    </header>
 
-        {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-        
-        <div>{{ content }}</div>
+    {% if page.subcat %}
+    <nav>
+        <ul class="menu">
+            {% assign subpages = site.html_pages | where_exp: "item", "item.subcat == page.subcat" | sort: "order" %}
+            {% for subp in subpages %}
+                <li><a href="{{ subp.url }}">{{ subp.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    {% endif %}
+
+    <article>
+        {{ content }}
     </article>
+
+    <footer>
+        <h2>Pages de la catégorie {{ page.subcat }}</h2>
+        {% if page.subcat %}
+        <nav>
+            <ul class="menu">
+                {% assign subpages = site.html_pages | where_exp: "item", "item.subcat == page.subcat" | sort: "order" %}
+                {% for subp in subpages %}
+                    <li><a href="{{ subp.url }}">{{ subp.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        {% endif %}
+    </footer>
 </section>
 
-{% include foot.html %}
+{% include _foot.html %}

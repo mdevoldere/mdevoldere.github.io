@@ -1,28 +1,9 @@
-{% include head.html %}
-
-<section class="row mt intro">
-    <article class="c2">
-        <h2>Formateur</h2>
-        <p>Formations et conception et développement web</p>
-    </article>
-    <article class="c2">
-        <h2>Concepteur</h2>
-        <p>Analyse et conception d'applications métiers. Modélisation de bases de données relationnelles</p>
-    </article>
-    <article class="c2">
-        <h2>Développeur</h2>
-        <p>Développement d'API Rest et de sites web avec Symfony, Prestashop, Wordpress et VueJS</p>
-    </article>
+{% include _banner.html %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile > 0" | sort: "show_tile" %}
+{% include _tiles.html tiles=tiles max=8 %}
+<section class="container p2">
+    <h2>Aspirant Développeur ?</h2>
+    <p>Le métier de développeur repose sur la création de logiciels et/ou de sites internet en s'appuyant sur des langages informatiques...</p>
+    <a class="action" href="/guides/" class="button next">Suivez les guides de démarrage</a>
 </section>
-<section>
-    {{ content }}
-</section>
-<section>
-    {% include articles-list.html %}
-</section>
-<aside>
-    Aside
-</aside>
-
-
-{% include foot.html %}
+{% include _foot.html %}

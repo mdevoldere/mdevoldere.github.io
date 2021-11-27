@@ -1,0 +1,132 @@
+@use "sass:map";
+
+$lightblue: (
+    "c1": #1B1B1E,
+    "c2": #272F31,
+    "c3": #373F51,
+    "c4": #58A4B0,
+    "c5": #A9BCD0,
+    "c6": #D8DBE2,
+    "success": #28a745,
+    "info": #17a2b8,
+    "warning": #ffc107,
+    "alert": #ff07c1,
+);
+
+$pink: (
+    "c1": #0E273C,
+    "c2": #2A284D,
+    "c3": #4A306D,
+    "c4": #A167A5,
+    "c5": #D3BCCC,
+    "c6": #E8D7F1,
+    "success": #28a745,
+    "info": #17a2b8,
+    "warning": #ffc107,
+    "alert": #ff07c1,
+);
+
+$gray: (
+    "c1": #393D3F,
+    "c2": #454A5B,
+    "c3": #546A7B,
+    "c4": #62929E,
+    "c5": #C6C5B9,
+    "c6": #FDFDFF,
+    "success": #28a745,
+    "info": #17a2b8,
+    "warning": #ffc107,
+    "alert": #ff07c1,
+);
+
+$test: (
+    "dark": #331E36,
+    "c3": #41337A,
+    "light": #6EA4BF,
+    "c5": #C2EFEB,
+    //"c6": #ECFEE8,
+    "success": #28a745,
+    "info": #17a2b8,
+    "warning": #ffc107,
+    "alert": #ff07c1,
+);
+
+
+//$theme: $test;
+
+
+$theme: (
+    "bg": #4376AF,
+    "txt": #B2D7DA,
+    "link": #43AF76,
+    
+) !default;
+
+$alerts:(
+    "success": #28a745,
+    "info": #17a2b8,
+    "warning": #ffc107,
+    "alert": #dd0707,
+) !default;
+
+
+@each $color-name, $color in $alerts {
+    .#{$color-name} {
+        background-color: $color;
+        color: lighten($color, 50%);
+
+        & > * {
+            color: lighten($color, 50%);
+        }
+
+        & h3 {
+            background-color: rgba($color, 0.2);
+        }
+    }
+  }
+/*
+@mixin darkmode($_theme) {
+    $dark: map.get($_theme, "light");
+    $light: map.get($_theme, "dark");
+
+    --dark: #{$dark};
+    --darker: #{lighten($dark, 10%)};
+    --darkest: #{lighten($dark, 20%)};
+    --medium: #{darken($dark, 20%)};
+    --light: #{$light};
+    --lighter: #{darken($light, 5%)};
+    --lightest: #{darken($light, 15%)};
+
+    --hover: #{rgba($light, .2)};
+    --hover-dark: #{rgba($dark, .2)};
+
+    //--border: 1px solid var(--medium);
+
+    --success: #{map.get($alerts, "success")};
+    --info: #{map.get($alerts, "info")};
+    --warning: #{map.get($alerts, "warning")};
+    --alert: #{map.get($alerts, "alert")};
+}
+
+@mixin lightmode($_theme) {
+    $dark: map.get($_theme, "dark");
+    $light: map.get($_theme, "light");
+
+    --dark: #{$dark};
+    --darker: #{darken($dark, 10%)};
+    --darkest: #{darken($dark, 20%)};
+    --medium: #{lighten($dark, 20%)};
+    --light: #{$light};
+    --lighter: #{lighten($light, 5%)};
+    --lightest: #{lighten($light, 20%)};
+
+    --hover: #{rgba($light, .2)};
+    --hover-dark: #{rgba($dark, .2)};
+
+    //--border: 1px solid var(--dark);
+
+    --success: #{map.get($alerts, "success")};
+    --info: #{map.get($alerts, "info")};
+    --warning: #{map.get($alerts, "warning")};
+    --alert: #{map.get($alerts, "alert")};
+}*/

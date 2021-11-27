@@ -1,0 +1,61 @@
+.menu, .menu address {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem .8rem;
+    margin: 0 .5rem;
+}
+
+.menu a:hover {
+    background: var(--bg-hover, #00000020);
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.breadcrumb li a {
+    padding-left: 1rem;
+    position:relative;
+    font-size: 1.2rem;
+}
+
+.breadcrumb li:not(:first-child) a::before {
+    position:absolute;
+    left:-.75rem;
+    content:"\203A";
+}
+
+
+#menu {
+    display: none;
+}
+
+#menu.active {
+    display: flex;
+}
+
+
+@media (min-width: 1200px) {
+    #menuToggle {
+        display: none;
+    }
+    #menu {
+        display: flex;
+        flex-basis: unset;
+    }
+}
+
+@media print {
+    .menu {
+        display:none;
+    }
+}

@@ -1,0 +1,41 @@
+.row, .col {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.col {
+    flex-flow: column nowrap;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.row > * {
+    flex-basis: 100%;
+}
+
+@media (min-width: 1200px) {
+    .flex2 {
+        flex-basis: 48%;
+    }
+    .flex3 {
+        flex-basis: 33%;
+    }
+    .flex4 {
+        flex-basis: 23%;
+    }
+    .flex5 {
+        flex-basis: 18%;
+    }
+}

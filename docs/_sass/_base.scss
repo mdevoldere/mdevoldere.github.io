@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -23,7 +25,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    padding: .2em 0;
+    padding: .7em 0 .2em 0;
     letter-spacing: 0.02em;
 }
 
@@ -51,6 +53,10 @@ h6 {
     font-size: 1.1em;
 }
 
+hr {
+    margin: 16px 0 10px 0;
+}
+
 p {
     padding: .6em 0;
     text-align: justify;
@@ -69,12 +75,11 @@ ul {
 
 main {
     width: 100%;
-    max-width: 100%;
     font-size: 1.2em;
 }
 
 main ul {
-    /*list-style: circle;*/
+    list-style: circle;
     margin: .5em 0;
 }
 
@@ -84,7 +89,7 @@ main ul ul {
 
 main ul li { 
     margin-top: .2em;
-    margin-left: .5em;
+    margin-left: 1.5em;
 }
 
 main ul li::before {
@@ -127,30 +132,6 @@ main figure {
     text-align: center;
 }
 
-
-.breadcrumb {
-    padding: 1em 10px 1em 0;
-}
-
-.breadcrumb ul, .breadcrumb ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.breadcrumb li {
-    display: inline-block;
-    padding: 0;
-    margin-left:0;
-}
-
-.breadcrumb li:not(:last-child):after {
-    display: inline-block;
-    content: '\00BB'; /* \007E \00B7 */
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 th, td {
     padding: .3em;
     font-size: .8em;
@@ -168,10 +149,6 @@ section header > p {
 
 article {
     margin: 0 auto;
-}
-
-.mt {
-    margin-top: 1em;
 }
 
 

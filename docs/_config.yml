@@ -1,13 +1,17 @@
-destination: ../www/
-permalink: /articles/:categories/:title.html
+# destination: ../www/
+port: 80
+permalink: /articles/:categories/:title/
+# permalink: pretty
 # site settings
-title: Mickaël DEVOLDÈRE 
+title: "Mickaël DEVOLDÈRE" 
+slogan: ""
 subtitle: Formateur &amp; Développeur
-email: contact@localhost
-description: Ressources et guides pour les développeurs<br /> disponibles sous license Creative Commons.
+description: Ressources et guides pour aspirants développeurs<br /> disponibles sous license Creative Commons.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 #author: MDevoldere
+
+banner: /assets/img/banner.jpg
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
