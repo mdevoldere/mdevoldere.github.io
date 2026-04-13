@@ -10,12 +10,12 @@ PURCHASES CSS
 :root {
     --light: white;
     --dark: black;
-    --crm-primary: #e217d1; /* #1b296a; /* Obligatoire */
-    --crm-secondary: #23b310; /* #ed6840; /* Obligatoire */
-    --crm-ofp: #7db9da;
+    --crm-primary: #23b310; /* #1b296a; /* Obligatoire */
+    --crm-secondary: #ecd0ea; /* #ed6840; /* Obligatoire */
+    --crm-ofp: #8dc5ca;
     --crm-alert: #cf2d4f;
     --crm-warning: #f6af2e;
-    --crm-success: #488287;
+    --crm-success: #8dc5ca;/* #488287; /* */
     --border-radius: .5rem;
 }
 
