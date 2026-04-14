@@ -10,9 +10,9 @@ PURCHASES CSS
 :root {
     --light: white;
     --dark: black;
-    --crm-primary: #777777; /* #1b296a; /* Obligatoire */
-    --crm-secondary: #ecd0ea; /* #ed6840; /* Obligatoire */
-    --crm-ofp: #8dc5ca;
+    --crm-primary: #11114E; /* #1b296a; /* Obligatoire */
+    --crm-secondary: #FFF9C4; /* #ed6840; /* Obligatoire */
+    --crm-ofp: #C0DFEF;
     --crm-alert: #cf2d4f;
     --crm-warning: #f6af2e;
     --crm-success: #8dc5ca;/* #488287; /* */
@@ -32,7 +32,8 @@ body {
     padding: 0;
     font-size: 1.6rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   /* Vous pouvez modifier la police */
-    background-color: var(--crm-primary);   /* Vous pouvez changer la couleur de fond */
+    background: #11114E;
+    background: linear-gradient(190deg,rgba(17, 17, 78, 1) 52%, rgba(141, 197, 202, 1) 100%);
     color: var(--light);   /* Vous pouvez changer la couleur du texte */
 }
 
@@ -44,7 +45,8 @@ body {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 2rem;
-    background-color: var(--light);
+    background: #FFFFFF;
+    background: linear-gradient(5deg,rgba(255, 255, 255, 1) 10%, rgba(141, 197, 202, 1) 100%);
     color: var(--crm-primary)
 }
 
@@ -94,6 +96,14 @@ textarea {
     vertical-align: top;
 }
 
+textarea:hover{
+    background-color: transparent;
+    background-image: url('/docs/img/pika.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--crm-ofp);
+}
+
 button {
     cursor: pointer;
     padding: 1rem;
@@ -125,6 +135,8 @@ button:hover {
     border-radius: var(--border-radius);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    -webkit-text-stroke: 3px var(--crm-primary);
+    paint-order: stroke fill;
 }
 
 .info p {
