@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="title">
-        <h1>Page de Demande de matériel</h1>
+        <h1>Material request page</h1>
         <img src="img/logo-centre-de-readaptation-de-mulhouse-colors.svg" alt="Logo de l'entreprise">
     </header>
 
@@ -18,66 +18,66 @@
         <form class="purchase">
 
             <fieldset>
-                <legend>Demandeur</legend>
+                <legend>Requester</legend>
                 <div>
-                    <label for="nom">Nom: </label>
-                    <input id="nom" type="text" placeholder="Votre nom" required>
+                    <label for="nom">Last Name: </label>
+                    <input id="nom" type="text" placeholder="Last Name" required>
                 </div>
                 <div>
-                    <label for="prenom">Prénom: </label>
-                    <input id="prenom" type="text" placeholder="Votre prénom" required>
+                    <label for="prenom">First Name: </label>
+                    <input id="prenom" type="text" placeholder="First Name" required>
                 </div>
                 <div>
-                    <label for="email">Adresse E-mail:</label>
-                    <input id="email" type="email" placeholder="Votre adresse email" required>
+                    <label for="email">your Email :</label>
+                    <input id="email" type="email" placeholder="Email" required>
                 </div>
                 <div>
                     <label for="service">Service:</label>
                     <select id="service">
-                        <option>Sélectionnez</option>
-                        <option>Comptabilité</option>
-                        <option>Ressources humaines</option>
-                        <option>Service informatique</option>
+                        <option>Select</option>
+                        <option>Accounting</option>
+                        <option>Human Resources</option>
+                        <option>it department</option>
                     </select>
                 </div>
             </fieldset>
             
             <fieldset>
-                <legend>Détails de l'article</legend>
+                <legend>Item details</legend>
                 <div>
-                    <label for="art_nom">Libellé de l'article:</label>
-                    <input id="art_nom" type="" placeholder="Nom de l'article" required>
+                    <label for="art_nom">Item name:</label>
+                    <input id="art_nom" type="" placeholder="Name of the item" required>
                 </div>
                 <div>
-                    <label for="art_description">Description de l'article:</label>
-                    <textarea id="art_description" placeholder="Ajoutez ici la description de l'article" required></textarea>
+                    <label for="art_description">Item description:</label>
+                    <textarea id="art_description" placeholder="Add description of the item here" required></textarea>
                 </div>
                 <div>
-                    <label for="art_quantite">Quantité souhaitée:</label>
+                    <label for="art_quantite">Item quantity:</label>
                     <input id="art_quantite" type="number" min="1" max="1000" value="1" required>
                 </div>
                 <div>
-                    <label for="art_prix">Prix unitaire (arrondi à l'€ supérieur):</label>
+                    <label for="art_prix">Unit Price (Rounded to the superior €):</label>
                     <input id="art_prix" type="number" min="1" max="100000" required>
                 </div>
                 <div>
-                    <label for="art_date">Date de livraison souhaitée:</label>
+                    <label for="art_date">Desired delivery date:</label>
                     <input id="art_date" type="date" required>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend>Justification de la demande</legend>
+                <legend>Request justification</legend>
                 <div>
-                    <label for="art_motif">Justifiez le besoin:</label>
-                    <textarea id="art_motif" placeholder="Justifiez votre besoin en quelques lignes" required></textarea>
+                    <label for="art_motif">Asking the needs:</label>
+                    <textarea id="art_motif" placeholder="Justified the needs in few lines" required></textarea>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Validation</legend>
-                <button type="submit">Envoyer la demande</button>
-                <button type="reset">Annuler</button>
+                <button type="submit">Send the request</button>
+                <button type="reset">Cancel</button>
             </fieldset>
 
         </form>
@@ -87,9 +87,9 @@
     </main>
 
     <footer class="info">
-        <h2>Informations Complémentaires</h2>
-        <p>Veuillez remplir ce formulaire avec précision. Toute demande incomplète sera ignorée sans notification.</p>
-        <p>Pour toute question, veuillez contacter le service des achats à l'adresse email suivante : <a href="mailto:achats@example.com">achats@example.com</a></p>
+        <h2>Additional Information</h2>
+        <p>Please fill out this form accurately. Any incomplete requests will be disregarded without notice.</p>
+        <p>If you have any questions, please contact the Purchasing Department at the following email address : <a href="mailto:achats@example.com">achats@example.com</a></p>
     </footer>
 </body>
 </html>
