@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="css/purchases.css">
     <script src="js/purchases.js" defer type="module"></script>
 </head>
+
 <body>
     <header class="title">
-        <h1>Material request page</h1>
+        <h1>材料要求ページ</h1>
         <img src="img/logo-centre-de-readaptation-de-mulhouse-colors.svg" alt="Logo de l'entreprise">
     </header>
 
@@ -18,66 +20,66 @@
         <form class="purchase">
 
             <fieldset>
-                <legend>Requester</legend>
+                <legend>依頼者</legend>
                 <div>
-                    <label for="nom">Last Name: </label>
-                    <input id="nom" type="text" placeholder="Last Name" required>
+                    <label for="nom">姓: </label>
+                    <input id="nom" type="text" placeholder="姓" required>
                 </div>
                 <div>
-                    <label for="prenom">First Name: </label>
-                    <input id="prenom" type="text" placeholder="First Name" required>
+                    <label for="prenom">名: </label>
+                    <input id="prenom" type="text" placeholder="名" required>
                 </div>
                 <div>
-                    <label for="email">your Email :</label>
-                    <input id="email" type="email" placeholder="Email" required>
+                    <label for="email">メールアドレス:</label>
+                    <input id="email" type="email" placeholder="メールアドレス" required>
                 </div>
                 <div>
-                    <label for="service">Service:</label>
+                    <label for="service">サービス:</label>
                     <select id="service">
-                        <option>Select</option>
-                        <option>Accounting</option>
-                        <option>Human Resources</option>
-                        <option>it department</option>
+                        <option>選択</option>
+                        <option>会計</option>
+                        <option>人事</option>
+                        <option>IT部門</option>
                     </select>
                 </div>
             </fieldset>
-            
+
             <fieldset>
-                <legend>Item details</legend>
+                <legend>アイテムの詳細</legend>
                 <div>
-                    <label for="art_nom">Item name:</label>
-                    <input id="art_nom" type="" placeholder="Name of the item" required>
+                    <label for="art_nom">項目名:</label>
+                    <input id="art_nom" type="" placeholder="アイテムの名前" required>
                 </div>
                 <div>
-                    <label for="art_description">Item description:</label>
-                    <textarea id="art_description" placeholder="Add description of the item here" required></textarea>
+                    <label for="art_description">アイテムの説明:</label>
+                    <textarea id="art_description" placeholder="ここにアイテムの説明を追加します" required></textarea>
                 </div>
                 <div>
-                    <label for="art_quantite">Item quantity:</label>
+                    <label for="art_quantite">商品数量：</label>
                     <input id="art_quantite" type="number" min="1" max="1000" value="1" required>
                 </div>
                 <div>
-                    <label for="art_prix">Unit Price (Rounded to the superior €):</label>
+                    <label for="art_prix">単価（€に切り上げ）：</label>
                     <input id="art_prix" type="number" min="1" max="100000" required>
                 </div>
                 <div>
-                    <label for="art_date">Desired delivery date:</label>
+                    <label for="art_date">希望納品日：</label>
                     <input id="art_date" type="date" required>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend>Request justification</legend>
+                <legend>依頼理由</legend>
                 <div>
-                    <label for="art_motif">Asking the needs:</label>
-                    <textarea id="art_motif" placeholder="Justified the needs in few lines" required></textarea>
+                    <label for="art_motif">必要事項の入力:</label>
+                    <textarea id="art_motif" placeholder="必要理由を数行で入力してください" required></textarea>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend>Validation</legend>
-                <button type="submit">Send the request</button>
-                <button type="reset">Cancel</button>
+                <legend>確認</legend>
+                <button type="submit">依頼を送信する</button>
+                <button type="reset">キャンセル</button>
             </fieldset>
 
         </form>
@@ -87,9 +89,10 @@
     </main>
 
     <footer class="info">
-        <h2>Additional Information</h2>
-        <p>Please fill out this form accurately. Any incomplete requests will be disregarded without notice.</p>
-        <p>If you have any questions, please contact the Purchasing Department at the following email address : <a href="mailto:achats@example.com">achats@example.com</a></p>
+        <h2>追加情報</h2>
+        <p>このフォームに正確に記入してください。不備のある申請は、予告なく無効となる場合があります。</p>
+        <p>ご不明な点がございましたら、購買部（<a href="mailto:achats@example.com">achats@example.com</a>）までお問い合わせください。</p>
     </footer>
 </body>
+
 </html>
