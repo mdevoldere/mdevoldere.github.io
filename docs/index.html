@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="title">
-        <h1>Material request page</h1>
+        <h1>자재 요청 페이지</h1>
         <img src="img/logo-centre-de-readaptation-de-mulhouse-colors.svg" alt="Logo de l'entreprise">
     </header>
 
@@ -18,66 +18,66 @@
         <form class="purchase">
 
             <fieldset>
-                <legend>Requester</legend>
+                <legend>요청자</legend>
                 <div>
-                    <label for="nom">Last Name: </label>
+                    <label for="nom">성</label>
                     <input id="nom" type="text" placeholder="Last Name" required>
                 </div>
                 <div>
-                    <label for="prenom">First Name: </label>
+                    <label for="prenom">이름</label>
                     <input id="prenom" type="text" placeholder="First Name" required>
                 </div>
                 <div>
-                    <label for="email">your Email :</label>
+                    <label for="email">이메일</label>
                     <input id="email" type="email" placeholder="Email" required>
                 </div>
                 <div>
-                    <label for="service">Service:</label>
+                    <label for="service">부서</label>
                     <select id="service">
-                        <option>Select</option>
-                        <option>Accounting</option>
-                        <option>Human Resources</option>
-                        <option>it department</option>
+                        <option>선택</option>
+                        <option>회계</option>
+                        <option>인사부</option>
+                        <option>IT 부서</option>
                     </select>
                 </div>
             </fieldset>
             
             <fieldset>
-                <legend>Item details</legend>
+                <legend>항목 세부 정보</legend>
                 <div>
-                    <label for="art_nom">Item name:</label>
+                    <label for="art_nom">항목 이름</label>
                     <input id="art_nom" type="" placeholder="Name of the item" required>
                 </div>
                 <div>
-                    <label for="art_description">Item description:</label>
+                    <label for="art_description">항목 설명</label>
                     <textarea id="art_description" placeholder="Add description of the item here" required></textarea>
                 </div>
                 <div>
-                    <label for="art_quantite">Item quantity:</label>
+                    <label for="art_quantite">수량</label>
                     <input id="art_quantite" type="number" min="1" max="1000" value="1" required>
                 </div>
                 <div>
-                    <label for="art_prix">Unit Price (Rounded to the superior €):</label>
+                    <label for="art_prix">단가 (유로 기준 올림)</label>
                     <input id="art_prix" type="number" min="1" max="100000" required>
                 </div>
                 <div>
-                    <label for="art_date">Desired delivery date:</label>
+                    <label for="art_date">희망 배송 날짜</label>
                     <input id="art_date" type="date" required>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend>Request justification</legend>
+                <legend>요청 사유</legend>
                 <div>
-                    <label for="art_motif">Asking the needs:</label>
+                    <label for="art_motif">필요 사항 요청</label>
                     <textarea id="art_motif" placeholder="Justified the needs in few lines" required></textarea>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend>Validation</legend>
-                <button type="submit">Send the request</button>
-                <button type="reset">Cancel</button>
+                <legend>승인</legend>
+                <button type="submit">요청 보내기</button>
+                <button type="reset">취소</button>
             </fieldset>
 
         </form>
@@ -87,9 +87,9 @@
     </main>
 
     <footer class="info">
-        <h2>Additional Information</h2>
-        <p>Please fill out this form accurately. Any incomplete requests will be disregarded without notice.</p>
-        <p>If you have any questions, please contact the Purchasing Department at the following email address : <a href="mailto:achats@example.com">achats@example.com</a></p>
+        <h2>추가 정보</h2>
+        <p>이 양식을 정확하게 작성해 주세요. 불완전한 요청은 별도의 안내 없이 무시됩니다.</p>
+        <p>문의 사항이 있으시면 아래 이메일 주소로 구매 부서에 연락해 주세요 : <a href="mailto:achats@example.com">achats@example.com</a></p>
     </footer>
 </body>
 </html>
