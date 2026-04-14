@@ -10,7 +10,7 @@ PURCHASES CSS
 :root {
     --light: white;
     --dark: black;
-    --crm-primary: #23b310; /* #1b296a; /* Obligatoire */
+    --crm-primary: #777777; /* #1b296a; /* Obligatoire */
     --crm-secondary: #ecd0ea; /* #ed6840; /* Obligatoire */
     --crm-ofp: #8dc5ca;
     --crm-alert: #cf2d4f;
