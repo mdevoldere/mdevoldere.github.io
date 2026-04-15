@@ -348,3 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# settings.json can contain sensitive information, so it is recommended to ignore it
+settings.json
