@@ -129,7 +129,7 @@ button:hover {
 
 .info h2 {
     background-color: var(--crm-ofp);
-    color: var(--crm-secondary);
+    color: var(--crm-primary);
     padding: 1rem;
     text-align: center;
     border-radius: var(--border-radius);
