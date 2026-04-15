@@ -9,13 +9,13 @@ PURCHASES CSS
 
 :root {
     --light: white;
-    --dark: #2d3436;
-    --crm-primary: #3d576e;
-    --crm-secondary:#FFC8DD;
-    --crm-ofp:#BDE0FE;
-    --crm-alert: #FFADAD;
-    --crm-warning: #FFD6A5;
-    --crm-success: #CAFFBF;
+    --dark: black;
+    --crm-primary: #555555; /* #1b296a; /* Obligatoire */
+    --crm-secondary: #ecd0ea; /* #ed6840; /* Obligatoire */
+    --crm-ofp: #8dc5ca;
+    --crm-alert: #cf2d4f;
+    --crm-warning: #f6af2e;
+    --crm-success: #8dc5ca;/* #488287; /* */
     --border-radius: .5rem;
 }
 
